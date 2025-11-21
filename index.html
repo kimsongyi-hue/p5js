@@ -17,21 +17,26 @@
     h1 {
       margin-bottom: 40px;
     }
-    a {
-      display: block;
+    .menu-row {
+      margin: 10px 0;
+    }
+    .menu-row a {
       text-decoration: none;
       color: #333;
       font-size: 1.2em;
-      margin: 10px 0;
       padding: 10px 20px;
       background: #fff;
       border-radius: 5px;
       border: 1px solid #ccc;
       transition: 0.2s;
+      margin-right: 10px; /* 링크 간 간격 */
     }
-    a:hover {
+    .menu-row a:hover {
       background: #e0e0e0;
       border-color: #999;
+    }
+    .separator {
+      margin: 0 5px;
     }
   </style>
 </head>
@@ -39,8 +44,17 @@
   <h1>My GitHub Pages</h1>
   
   <!-- 메뉴 링크 -->
-  <a href="homeworks/week3Homework.html">과제#1</a> | <a href="homeworks/week12Homework.html">과제#4</a>
-  <a href="homeworks/week5Homework.html">과제#2</a> |  <a href="homeworks/week7Homework.html">과제#3</a>
+  <div class="menu-row">
+    <a href="homeworks/week3Homework.html">과제#1</a>
+    <span class="separator">|</span>
+    <a href="homeworks/week12Homework.html">과제#4</a>
+  </div>
+  
+  <div class="menu-row">
+    <a href="homeworks/week5Homework.html">과제#2</a>
+    <span class="separator">|</span>
+    <a href="homeworks/week7Homework.html">과제#3</a>
+  </div>
   
 </body>
 </html>
